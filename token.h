@@ -1,6 +1,6 @@
 /*token.h*/
 
-//
+/
 // Token definitions for SimpleSQL programming language
 //
 // Randy Truong

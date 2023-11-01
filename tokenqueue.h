@@ -1,8 +1,6 @@
 /*tokenqueue*/
 
 //
-// Project: Token Queue for SimpleSQL
-//
 // Randy Truong
 //
 

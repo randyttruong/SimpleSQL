@@ -1,8 +1,6 @@
 /*resultset.h*/
 
 //
-// Project: Result Set for SimpleSQL
-//
 // Randy Truong
 //
 

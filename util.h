@@ -1,7 +1,5 @@
-/*util.h*/
+//util.h*/
 
-//
-// Project: utility functions for SimpleSQL
 //
 // Randy Truong
 //
