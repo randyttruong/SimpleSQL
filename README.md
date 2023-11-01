@@ -1,6 +1,7 @@
 # SimpleSQL
-A *simple* text-based relational database management system that contains a
-subset of core functionality from SQL.
+An experiment for creating a *simple* text-based relational
+database management system that contains a subset of core
+functionality from SQL.
 
 ## Currently Supported
 - SELECT, INSERT
@@ -28,6 +29,17 @@ These tokens can be categorized as the following:
 
 These tokens are then added into a Queue data structure known as the TokenQueue.
 ### Syntactic Analyzer
+Receives a `TokenQueue` object and then compares tokens to Backus-Naur form in order to validate
+syntactically acceptable SQL queries. If error, then break query. Otherwise, pass to semantic
+analyzer.
+
 ### Semantic Analyzer
+Receives a `TokenQueue` object containing a syntactically-valid SQL query, then
+constructs an abstract syntax tree that can be categorized via the structure of SQL query.
+Syntax tree is developed based on previous token. If semantic analysis
+is successful, then return abstract syntax tree for query execution.
+
 ### Executor
+Given an abstract syntax tree as well as a parsed database, construct
+resulting database from query via linked list traversal.
 
